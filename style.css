@@ -85,6 +85,25 @@ p{
 
 
 
+.sponser-main{
+    display: flex;
+    gap: 2rem;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin: 3rem auto;
+    border-top: 1px solid #DDE4EB;
+    border-bottom: 1px solid #DDE4EB;
+    padding: 1rem;
+}
+.sponsers img{
+    width: 9%;
+}
+.sponser-down{
+    display: none;
+}
+
+
 
 
 
@@ -116,5 +135,26 @@ p{
         background-size: 80%;
 
         background-position: center center;
+    }
+
+    .hide{
+        display: none;
+    }
+.sponser-main{
+    border: none;
+    margin: 3rem auto 0;
+
+}
+    .sponser-down{
+      
+        display: flex;
+        gap: 1.5rem;
+        justify-content:space-between;
+        align-items: center;
+        max-width: 60vw;
+        margin: 0.7rem auto 3rem;
+    }
+    .sponsers img{
+        width: 15%;
     }
 }
