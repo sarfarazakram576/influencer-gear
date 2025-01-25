@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", serif;
+    color: #3a3a3a;
 }
 header{
     padding: 2.5rem 3rem;
@@ -30,6 +31,63 @@ nav ul li a {
     font-size: 1rem;
 }
 
+
+
+.influencer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 3rem;
+max-width: 100vw;
+margin: 1rem auto;
+}
+
+.influencer-items1{
+    width: 49%;
+}
+.influencer-items2{
+    width: 49%;
+    background: url("images/Circle design.svg");
+    background-repeat: no-repeat no-repeat;
+padding: 2rem 1rem;
+   background-size: 84.5%;
+   background-position: center left;
+}
+.influencer-items2 img{
+    width: 80%;
+}
+p{
+    line-height: 1.5rem;
+}
+.btn{
+    background-color: #E02C6D;
+    color: white;
+    border: 3px solid #E02C6D;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .6rem 2.5rem;
+}
+.btn:hover{
+    background-color: transparent;
+    color: #E02C6D;
+    border: 3px solid #E02C6D;
+
+}
+.btn i{
+    color: white;
+}
+.btn:hover  .color{
+    margin-left: .2rem;
+    color: #E02C6D;
+
+}
+
+
+
+
+
+
 @media   screen and (max-width:800px) {
   header{
     padding: 2.5rem .7rem;
@@ -41,5 +99,22 @@ nav ul li a {
     }
     nav {
         display: none;
+    }
+
+
+    .influencer-container{
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+
+    .influencer-items1{
+        width: 100%;
+    }
+    .influencer-items2{
+        width: 90%;
+        background-size: 80%;
+
+        background-position: center center;
     }
 }
