@@ -90,7 +90,7 @@ p{
     gap: 2rem;
     justify-content:space-between;
     align-items: center;
-    max-width: 70vw;
+    max-width: 85vw;
     margin: 3rem auto;
     border-top: 1px solid #DDE4EB;
     border-bottom: 1px solid #DDE4EB;
@@ -105,12 +105,42 @@ p{
 
 
 
+.collection{
+    max-width: 85vw;
+    margin: 3rem auto;
+}
+.collection-items img{
+    width: 100%;
+}
+.collection-container{
+    display: grid;
+grid-template-columns: repeat(3 , 1fr) ;
+gap: 2rem;
+}
+.collection-items{
+    border-radius: 7px;
+    padding: 1rem ;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+.flex{
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+
+}
+.icon i{
+    color: #FB8200;
+    font-size: .75rem;
+}
 
 
 @media   screen and (max-width:800px) {
   header{
     padding: 2.5rem .7rem;
 
+  }
+  .header-container > h2{
+font-size: 1.25rem;
   }
     .header-container > i{
         display: block;
@@ -124,6 +154,7 @@ p{
     .influencer-container{
         flex-direction: column-reverse;
         text-align: center;
+        padding: 1rem ;
 
     }
 
@@ -155,6 +186,13 @@ p{
         margin: 0.7rem auto 3rem;
     }
     .sponsers img{
-        width: 15%;
+        width: 17%;
+    }
+
+
+    .collection-container{
+        
+    grid-template-columns: 1fr ;
+
     }
 }
