@@ -76,9 +76,9 @@ p{
 }
 .btn i{
     color: white;
+
 }
 .btn:hover  .color{
-    margin-left: .2rem;
     color: #E02C6D;
 
 }
@@ -115,7 +115,7 @@ p{
 .collection-container{
     display: grid;
 grid-template-columns: repeat(3 , 1fr) ;
-gap: 2rem;
+
 }
 .collection-items{
     border-radius: 7px;
@@ -133,6 +133,27 @@ gap: 2rem;
     font-size: .75rem;
 }
 
+
+.feature{
+    max-width: 90vw;
+    gap: 2rem;
+    margin: 3rem auto;
+}
+.feature-container{
+display: flex;
+align-items: center;
+gap: 3rem;
+
+}
+.feature-items1{
+    width: 45%;
+}
+.feature-items1 img{
+    width: 100%;
+}
+.feature-items2{
+    width: 54%;
+}
 
 @media   screen and (max-width:800px) {
   header{
@@ -195,4 +216,19 @@ font-size: 1.25rem;
     grid-template-columns: 1fr ;
 
     }
+
+    .feature-container{
+flex-direction: column-reverse;
+
+        }
+        .feature-items2{
+            text-align: center;
+            width: 100%;
+        }
+        .feature-items1{
+            width: 100%;
+        }
+        .feature-items1 img{
+            width: 100%;
+        }
 }
